@@ -1,11 +1,11 @@
-// TODO Article qui affiche une ligne du panier 
-
 import React from 'react'
+import { Button, ListGroupItem } from 'reactstrap'
 
-const Article = ({imgSrc, name, price}) => <div>
+const Article = ({imgSrc, name, price}) => <ListGroupItem>
+    <Button>Supp</Button>
     <img alt={ name } src={ imgSrc } />
     <h3>{ name }</h3>
     <p>{ price } €</p>
-</div>
+</ListGroupItem>
 
 export default Article

@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders Article html 1`] = `
-<div>
+<li
+  className="list-group-item"
+>
+  <button
+    className="btn btn-secondary"
+    onClick={[Function]}
+    type={undefined}
+  >
+    Supp
+  </button>
   <img
     alt="Benzema"
     src="https://i0.wp.com/observalgerie.com/wp-content/uploads/2018/05/2170922-45375850-2560-1440.jpg?fit=1050%2C590&ssl=1"
@@ -13,5 +22,5 @@ exports[`renders Article html 1`] = `
     150000000
      €
   </p>
-</div>
+</li>
 `;
