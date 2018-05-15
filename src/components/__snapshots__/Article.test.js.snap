@@ -4,23 +4,44 @@ exports[`renders Article html 1`] = `
 <li
   className="list-group-item"
 >
-  <button
-    className="btn btn-secondary"
-    onClick={[Function]}
-    type={undefined}
+  <div
+    className="row"
   >
-    Supp
-  </button>
-  <img
-    alt="Benzema"
-    src="https://i0.wp.com/observalgerie.com/wp-content/uploads/2018/05/2170922-45375850-2560-1440.jpg?fit=1050%2C590&ssl=1"
-  />
-  <h3>
-    Benzema
-  </h3>
-  <p>
-    150000000
-     €
-  </p>
+    <div
+      className="col-3"
+    >
+      <button
+        className="btn btn-secondary"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Supp
+      </button>
+    </div>
+    <div
+      className="col-3"
+    >
+      <img
+        alt="Benzema"
+        className="img-fluid"
+        src="https://i0.wp.com/observalgerie.com/wp-content/uploads/2018/05/2170922-45375850-2560-1440.jpg?fit=1050%2C590&ssl=1"
+      />
+    </div>
+    <div
+      className="col-3"
+    >
+      <h3>
+        Benzema
+      </h3>
+    </div>
+    <div
+      className="col-3"
+    >
+      <p>
+        150000000
+         €
+      </p>
+    </div>
+  </div>
 </li>
 `;
