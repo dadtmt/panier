@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ListArticle html 1`] = `
+<ul
+  className="list-group"
+>
+  <li
+    className="list-group-item"
+  >
+    <button
+      className="btn btn-secondary"
+      onClick={[Function]}
+      type={undefined}
+    >
+      Supp
+    </button>
+    <img
+      alt="Zidane"
+      src="https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+    />
+    <h3>
+      Zidane
+    </h3>
+    <p>
+      45
+       €
+    </p>
+  </li>
+  <li
+    className="list-group-item"
+  >
+    <button
+      className="btn btn-secondary"
+      onClick={[Function]}
+      type={undefined}
+    >
+      Supp
+    </button>
+    <img
+      alt="Leboeuf"
+      src="https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+    />
+    <h3>
+      Leboeuf
+    </h3>
+    <p>
+      45
+       €
+    </p>
+  </li>
+  <li
+    className="list-group-item"
+  >
+    <button
+      className="btn btn-secondary"
+      onClick={[Function]}
+      type={undefined}
+    >
+      Supp
+    </button>
+    <img
+      alt="Pires"
+      src="https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+    />
+    <h3>
+      Pires
+    </h3>
+    <p>
+      45
+       €
+    </p>
+  </li>
+  <li
+    className="list-group-item"
+  >
+    <button
+      className="btn btn-secondary"
+      onClick={[Function]}
+      type={undefined}
+    >
+      Supp
+    </button>
+    <img
+      alt="Karembeu"
+      src="https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+    />
+    <h3>
+      Karembeu
+    </h3>
+    <p>
+      45
+       €
+    </p>
+  </li>
+</ul>
+`;
