@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Panier html 1`] = `
+<div
+  className="container"
+>
+  <ul
+    className="list-group"
+  />
+  <button
+    className="btn btn-secondary"
+    onClick={[Function]}
+    type={undefined}
+  />
+</div>
+`;
