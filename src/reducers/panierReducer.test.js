@@ -1,4 +1,4 @@
-import { makeRemoveArticleAction } from "../actions/actions";
+import { makeAddArticleAction, makeRemoveArticleAction } from "../actions/actions";
 
 import panierReducer from "./panierReducer";
 
@@ -41,6 +41,7 @@ describe("panierReducer", () => {
 
     expect(panierReducer(prevState, anyAction)).toEqual(prevState);
   });
+  
   it("should handle remove article action", () => {
     const prevState = [
       {
@@ -100,6 +101,89 @@ describe("panierReducer", () => {
     const removeKarembeuAction = makeRemoveArticleAction(4);
 
     expect(panierReducer(prevState, removeKarembeuAction)).toEqual(
+      expectedState
+    );
+  });
+
+  it("should handle add article action", () => {
+    const prevState = [
+      {
+        id: 1,
+        name: "Zidane",
+        price: "45",
+        imgSrc:
+          "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+      },
+      {
+        id: 2,
+        name: "Leboeuf",
+        price: "45",
+        imgSrc:
+          "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+      },
+      {
+        id: 3,
+        name: "Pires",
+        price: "45",
+        imgSrc:
+          "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+      },
+      {
+        id: 4,
+        name: "Karembeu",
+        price: "45",
+        imgSrc:
+          "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+      }
+    ];
+
+    const expectedState =  [
+      {
+        id: 1,
+        name: "Zidane",
+        price: "45",
+        imgSrc:
+          "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+      },
+      {
+        id: 2,
+        name: "Leboeuf",
+        price: "45",
+        imgSrc:
+          "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+      },
+      {
+        id: 3,
+        name: "Pires",
+        price: "45",
+        imgSrc:
+          "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+      },
+      {
+        id: 4,
+        name: "Karembeu",
+        price: "45",
+        imgSrc:
+          "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+      },
+      {
+        id: 5,
+        name: "Thuram",
+        price: "45",
+        imgSrc:
+          "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+      }
+    ];
+
+    const addThuramAction = makeAddArticleAction({
+      id: 5,
+      name: "Thuram",
+      price: "45",
+      imgSrc:
+        "https://www.foot01.com/img/images/650x600/2018/Jan/20/benzema-revient-zidane-recupere-l-arme-fatale-du-real-zidane-16,207169.jpg"
+    });
+
+    expect(panierReducer(prevState, addThuramAction)).toEqual(
       expectedState
     );
   });
