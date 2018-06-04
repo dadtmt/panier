@@ -13,7 +13,7 @@ exports[`renders Article html 1`] = `
       <button
         className="btn btn-secondary"
         onClick={[Function]}
-        type={undefined}
+        type="button"
       >
         Supp
       </button>

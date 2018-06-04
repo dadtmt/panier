@@ -16,7 +16,7 @@ exports[`renders ListArticle html 1`] = `
         <button
           className="btn btn-secondary"
           onClick={[Function]}
-          type={undefined}
+          type="button"
         >
           Supp
         </button>
@@ -59,7 +59,7 @@ exports[`renders ListArticle html 1`] = `
         <button
           className="btn btn-secondary"
           onClick={[Function]}
-          type={undefined}
+          type="button"
         >
           Supp
         </button>
@@ -102,7 +102,7 @@ exports[`renders ListArticle html 1`] = `
         <button
           className="btn btn-secondary"
           onClick={[Function]}
-          type={undefined}
+          type="button"
         >
           Supp
         </button>
@@ -145,7 +145,7 @@ exports[`renders ListArticle html 1`] = `
         <button
           className="btn btn-secondary"
           onClick={[Function]}
-          type={undefined}
+          type="button"
         >
           Supp
         </button>
